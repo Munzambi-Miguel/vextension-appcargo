@@ -1,0 +1,26 @@
+{
+    "name": "vsaude/appcargo",
+    "description": "Parte da aplicação responsavel para gerir cargos e funções empresariais",
+    "autoload": {
+        "psr-4": {
+            "AppCargo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Munzambi-Miguel",
+            "email": "munzambi.miguel@gmail.com"
+        }
+    ],
+    "require": {
+
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+              "AppCargo\\Providers\\AppCargoProvider"
+            ]
+        }
+    },
+    "version": "1.0.0"
+}
