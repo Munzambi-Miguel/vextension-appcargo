@@ -13,14 +13,16 @@
         }
     ],
     "require": {
-
+        "php": ">=8.2"
     },
     "extra": {
         "laravel": {
             "providers": [
-              "AppCargo\\Providers\\AppCargoProvider"
+                "AppCargo\\Providers\\AppCargoProvider"
             ]
         }
     },
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
