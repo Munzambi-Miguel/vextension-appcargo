@@ -1,6 +1,6 @@
 <?php
 
-namespace AppCargo\app\Modules;
+namespace AppCargo\App\Modules;
 
 use App\Http\API\CodeController;
 use App\Models\Trait\ArrayColores;

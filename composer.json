@@ -3,7 +3,8 @@
     "description": "Parte da aplicação responsavel para gerir cargos e funções empresariais",
     "autoload": {
         "psr-4": {
-            "AppCargo\\": "src/"
+            "AppCargo\\": "src/",
+            "AppCargo\\App": "src/app/"
         }
     },
     "authors": [
@@ -23,6 +24,6 @@
         }
     },
     "version": "1.0.0",
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true
 }

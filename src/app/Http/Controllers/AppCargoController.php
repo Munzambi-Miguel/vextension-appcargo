@@ -1,10 +1,10 @@
 <?php
 
-namespace AppCargo\app\Http\Controllers;
+namespace AppCargo\App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StorDataRequest;
-use AppCargo\app\Modules\Cargo;
+use AppCargo\App\Modules\Cargo;
 use Illuminate\Http\Request;
 use Illuminate\Support\Fluent;
 use Inertia\Inertia;
@@ -19,7 +19,7 @@ class AppCargoController extends Controller
         $screenHeight = $request->header('Screen-Height', 800);
         $itemHeight = 35;
 
-        $itemsPerPage = (int)floor($screenHeight / $itemHeight);
+        $itemsPerPage = (int) floor($screenHeight / $itemHeight);
 
         $cargos = Cargo::search($request->search)->paginate($itemsPerPage);
         return Inertia::render('Packages/app-cargos/Components/TableAppCargo', compact('cargos'));
