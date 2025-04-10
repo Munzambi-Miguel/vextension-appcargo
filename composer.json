@@ -4,7 +4,7 @@
     "autoload": {
         "psr-4": {
             "AppCargo\\": "src/",
-            "AppCargo\\App": "src/app/"
+            "AppCargo\\App\\": "src/app/"
         }
     },
     "authors": [
